@@ -1,0 +1,39 @@
+GET http://flip3.engr.oregonstate.edu:3288/customers HTTP/1.1
+
+###
+
+GET http://flip3.engr.oregonstate.edu:3288/customers?customer_id=17 HTTP/1.1
+
+###
+
+GET http://flip3.engr.oregonstate.edu:3288/customers/search/john HTTP/1.1
+
+###
+
+POST  http://flip3.engr.oregonstate.edu:3288/customers HTTP/1.1
+content-type: application/json
+
+{
+    "f_name": "M",
+    "l_name": "Curry",
+    "email": "oregon",
+    "phone": "5555555555",
+    "address": "test"
+}
+
+###
+
+PUT  http://flip3.engr.oregonstate.edu:3288/customers/17 HTTP/1.1
+content-type: application/json
+
+{
+    "f_name": "Maaaay",
+    "l_name": "Curry",
+    "email": "oregon",
+    "phone": "5555555555",
+    "address": "no where"
+}
+
+###
+
+DELETE http://flip3.engr.oregonstate.edu:3288/customers/124 HTTP/1.1

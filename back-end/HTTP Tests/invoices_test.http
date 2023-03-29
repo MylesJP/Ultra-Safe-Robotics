@@ -1,0 +1,17 @@
+GET http://flip3.engr.oregonstate.edu:3288/invoices HTTP/1.1
+
+###
+
+GET http://flip3.engr.oregonstate.edu:3288/invoices/customers HTTP/1.1
+
+###
+
+POST  http://flip3.engr.oregonstate.edu:3288/invoices HTTP/1.1
+content-type: application/json
+
+{
+    "payment_terms": "NET10", 
+    "customer_id": 118, 
+    "total_amount": 1500, 
+    "invoice_date": "2023-02-25"
+}

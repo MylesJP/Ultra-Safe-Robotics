@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Yellowtail&display=swap");
+
+:root {
+  --blue: #384354;
+  --beige: #d8a778;
+  --brown: #72614f;
+  --orange: #be5e3b;
+  --red: #bc3f32;
+  --lightblue: #CAD7EB;
+  --almostwhite: #FFFBF7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--almostwhite);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App-nav {
+  background: var(--blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+main {
+  margin: 1rem;
+  min-height: 100%;
+}
+
+.App-nav a {
+  color: inherit;
+  padding: 1.1rem;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.App-nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background-color: var(--beige);
+  padding: 0.7rem;
+  color: var(--red);
+}
+
+header h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 32px;
+  line-height: 1rem;
+}
+
+header:not(h1) {
+  font-family: "Yellowtail", cursive;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+label {
+  margin-left: 1.2rem;
+  margin-right: 0.1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  color: lightslategrey;
+}
+
+button {
+  padding: 0.25rem;
+  margin: 0.3rem;
+}
+
+input {
+  height: 1.3rem;
+}
+
+
+/* Tables */
+
+table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  border-bottom: solid var(--lightblue) 2px;
+}
+
+thead{
+  height: 30px;
+  color:white;
+  background-color: var(--blue);
+}
+
+th {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+td, th{
+  padding: 5px 20px 5px 10px;
+  word-wrap: normal;
+  max-width: 300px;
+}
+
+table tr td:nth-last-child(2) {
+  border-left: none;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--lightblue);
+}
+
+.logo {
+  background-image: url(./assets/Logo1.png);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3rem;
+}
+
+#homepage-text{
+  margin:1.1rem;
+  font-size: 1.1rem;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  align-items: center;
+  gap: 5px;
+  border: solid var(--lightblue) 2px
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+#delete-button:hover, #edit-button:hover{
+  cursor: pointer;
+}

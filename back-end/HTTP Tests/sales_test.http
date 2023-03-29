@@ -1,0 +1,13 @@
+GET http://flip3.engr.oregonstate.edu:3288/sales HTTP/1.1
+
+###
+
+POST  http://flip3.engr.oregonstate.edu:3288/sales HTTP/1.1
+content-type: application/json
+
+{
+    "invoice_id": 11,
+    "robot_id": 1,
+    "software_id": 2
+}
+
