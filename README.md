@@ -7,6 +7,6 @@ Ultra-Safe Robotics Co. is a local robotics sales company that sells base robots
   - Robots    - CRUD (m:n)
   - Incidents - CR
   
-The front end of this project is hosted on Firebase, the server middleware is hosted on OnRender, and the MySQL database is hosted on a local machine.
+The front end of this project is hosted on Firebase, the server middleware is hosted on Render.com, and the MySQL database is hosted on a local machine.
 
 
